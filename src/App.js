@@ -1,8 +1,8 @@
 import ContactForm from 'features/ContactsForm/ContactsForm';
 import ContactList from 'features/ContactList/ContactList';
 import Filter from 'features/Filter/Filter';
-import { getLoading, getError } from 'components/selectors';
-import { fetchContacts } from 'components/fetchContacts';
+import { getLoading, getError } from 'redux/selectors';
+import { fetchContacts } from 'redux/operations';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import style from './App.module.css';
